@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Computer Parts | CompTech Hub</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    Reliable computer parts • Friendly technical support • Built for your next upgrade
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav class="nav">
+    <a class="brand" href="index.html">
+      CompTech<span>Hub.</span>
+    </a>
+
+    <button class="menu" id="menuBtn" aria-label="Open menu">☰</button>
+
+    <div class="links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="products.html">Computer Parts</a>
+      <a href="about.html">About Us</a>
+    </div>
+
+    <button class="cartbtn" id="openCart">
+      Cart <span id="cartCount">0</span>
+    </button>
+  </nav>
+
+  <main>
+    <!-- COMPUTER PARTS -->
+    <section class="section" id="parts">
+
+      <div class="sectionhead">
+        <div>
+          <div class="eyebrow">Hardware store</div>
+          <h2>Find Your Next Upgrade</h2>
+          <div class="sub">
+            Explore our catalog of computer components and accessories.
+          </div>
+        </div>
+      </div>
+
+      <!-- SEARCH AND CATEGORY FILTER -->
+      <div class="searchrow">
+        <input
+          id="searchInput"
+          type="search"
+          placeholder="Search computer parts..."
+          aria-label="Search computer parts"
+        >
+
+        <select id="categoryFilter" aria-label="Filter by category">
+          <option value="All">All categories</option>
+          <option value="Components">Components</option>
+          <option value="Storage">Storage</option>
+          <option value="Accessories">Accessories</option>
+          <option value="Displays">Displays</option>
+        </select>
+      </div>
+
+      <!-- PRODUCTS APPEAR HERE -->
+      <div class="products" id="productGrid"></div>
+
+      <p class="sub" id="productCount"></p>
+
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footerinner">
+
+      <div>
+        <a class="brand footer-brand" href="index.html">
+          CompTech<span>Hub.</span>
+        </a>
+        <p>Computer parts, and repairs.</p>
+      </div>
+        <p>CompTechHub@gmail.com</p>
+        <p>© <span id="year"></span> CompTech Hub.</p>
+      </div>
+
+    </div>
+  </footer>
+  <script src="script.js" defer></script>
+
+</body>
+</html>
